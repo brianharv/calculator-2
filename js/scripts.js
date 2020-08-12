@@ -1,30 +1,26 @@
-function add(number1, number2) {
-	return number1 + number2;
-}
+// Business Logic
 
-const number1 = parseInt (prompt("Enter a number:"));
-const number2 = parseInt (prompt("Enter another number:"))
+	const add = function(number1, number2) {
+		return number1 + number2;
+	};
 
-// alert(add(number1, number2));
+	const multiply = function(number1, number2) {
+		return number1 * number2;
+	};
 
-function multiply(number1, number2) {
-	return number1 * number2;
-}
+	const divide = function(number1, number2) {
+		return number1 / number2; 
+	};
 
+	const subtract = function(number1, number2) {
+		return number1 - number2;
+	};
 
-//alert(multiply(number1, number2))
+	// Everything below this line is user interface logic:
 
-function divide(number1, number2) {
-	return number1 / number2; 
-}
-
-//alert(divide(number1, number2))
-
-
-
-function subtract(number1, number2) {
-	return number1 - number2;
-}
-
-
-alert(subtract(number1,number2))
+	$(document).ready(function() {
+		const number1 = parseInt ($("#add1").val());
+		const number2 = parseInt ($("#add2").val());
+	
+		alert(add(number1, number2));
+});	
