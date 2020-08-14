@@ -48,6 +48,6 @@ $(document).ready(function() {
 		const number1 = parseInt ($("input#divide1").val());
 		const number2 = parseInt ($("input#divide2").val());
 		const result = divide(number1, number2);
-		$("#output4").text();
+		$("#output4").text(result);
 	});
 });
