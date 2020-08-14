@@ -18,11 +18,14 @@
 
 	// Everything below this line is user interface logic:
 $(document).ready(function() {
-	$("form#one").submit(function(event) {
+	$("form#calculator").submit(function() {
 		event.preventDefault();
 		const number1 = parseInit ($("input#input1").val());
 		const number2 = parseInit ($("input#input2").val());
 		const operator = $("input:radio[name=operator]:checked").val();
+		console.log("1st number: " + number1); // for debugging
+		console.log("2nd number: " + number2); // for debugging
+		console.log("operator: " + operator); // for debugging
 		const result = add(number1, number2);
 		$("#output").text(result);
 	});
