@@ -2,7 +2,7 @@
 
 #### _Program that allows the user to do basic functions of add, subtract, multiply, and divide. 10 August 2020_
 
-#### By _**David McCaslin davidmccaslin94@gmail.com**_
+#### By _**Brian Harvey brian.harv3y@gmail.com, Garrett Brown garrettpaulbrown@gmail.com and David McCaslin davidmccaslin94@gmail.com**_
 
 ## Description
 
