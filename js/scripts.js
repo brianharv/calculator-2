@@ -17,7 +17,19 @@
 	}
 
 	// Everything below this line is user interface logic:
+$(document).ready(function() {
+	$("form#one").submit(function(event) {
+		event.preventDefault();
+		const number1 = parseInit ($("input#input1").val());
+		const number2 = parseInit ($("input#input2").val());
+		const operator = $("input:radio[name=operator]:checked").val();
+		const result = add(number1, number2);
+		$("#output").text(result);
+	});
+});
 
+
+	/*
 $(document).ready(function() {
 	$("form#add").submit(function(event) {
 		event.preventDefault();
@@ -50,4 +62,7 @@ $(document).ready(function() {
 		const result = divide(number1, number2);
 		$("#output4").text(result);
 	});
-});
+});	
+	
+*/
+
