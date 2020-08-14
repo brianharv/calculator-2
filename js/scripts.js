@@ -34,4 +34,20 @@ $(document).ready(function() {
 		const result = subtract(number1, number2);
 		$("#output2").text(result);
 	});
+
+	$("form#multiply").submit(function(event) {
+		event.preventDefault();
+		const number1 = parseInt ($("input#multiply1").val());
+		const number2 = parseInt ($("Input#multiply2").val());
+		const result = multiply(number1, number2);
+		$("#output3").text(result);
+	});
+
+	$("form#divide").submit(function(event) {
+		event.preventDefault();
+		const number1 = parseInt ($("input#divide1").val());
+		const number2 = parseInt ($("input#divide2").val());
+		const result = divide(number1, number2);
+		$("#output4").text();
+	});
 });
